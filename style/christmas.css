@@ -1,0 +1,93 @@
+@charset "utf-8";
+/* CSS Document */
+
+.gray {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: gray;
+}
+/* reset */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, p , form, fieldset, legend, input, button, textarea, th, td {
+    margin:0;
+    padding:0;    
+}
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+fieldset, img {
+    border:0;
+}
+ul,li {
+    list-style:none;
+}
+body {
+    background: #f1f1f1;
+    color: #666;
+    font:12px/1.7 Helvetica,Arial,Tahoma,sans-serif,"\5B8B\4F53";
+}
+.ac_row:after {
+    clear:both;
+    content:'\0020';
+    display:block;
+    height:0;    
+}
+.ac_row {
+    zoom:1;
+}
+
+/*链接颜色*/
+a,button{outline:none; /*移除虚线框  IE8,FF有用*/ hide-focus: expression(this.hideFocus=true); /*IE6、IE7*/}
+a{
+    color:#999;
+    text-decoration:none;
+}
+
+a:hover{
+    color:#be0000;
+    text-decoration: underline;
+}
+
+.fst{font-family: "\5B8B\4F53";}
+
+h1,h2,h3,h4,h5,h6{font-family:\5FAE\8F6F\96C5\9ED1; font-size: 16px;}
+
+/* end reset */
+.ac_row{
+    width:1000px;
+    margin:0 auto;
+}
+.r1 { height:1000px;}
+.r2 { height:1800px;}
+.r3 { height:1200px;}
+.r4 { height:500px;}
+.r5 { height:1000px;}
+
+ *html{background-image:url(about:blank);background-attachment:fixed;}/*低版本浏览器防止抖动的，必须有*/
+ 
+/*模板头部，所有专题页面公用*/
+.anchor .anchor_nav{width:100%; height: 70px; margin: 0 auto;  background: #fff;}
+.anchor .anchor_nav li{width: 100px; height: 70px; float: left; padding:0 80px;display:inline; }
+.anchor .anchor_nav li a{display: block; float: left; width: 70px;height: 70px; background:url(../images/index_nav.gif) 0 0 no-repeat; text-align: center; color: #e02800;}
+.anchor .anchor_nav li a i{display: block; padding-top: 12px; height: 22px; line-height: 22px;}
+.anchor .anchor_nav li a strong{font-family: Arial, Helvetica, sans-serif; font-weight: bold; font-size: 24px; display: block; height: 30px; line-height: 20px;}
+.anchor .anchor_nav li a:hover{background-position: 0 -70px; color: #fff; text-decoration: none;}
+.h15{height: 15px; overflow: hidden;}
+
+.anchor .anchor_mainpage{width: 1000px;}
+h2{font-size: 24px; text-align: center; color: #333; font-weight: bold;}
+.anchor .anchor_mainpage p{width: 650px; margin: 0 auto; color: #fff; font-size: 16px; padding: 50px 0 50px;}
+.anchor .anchor_mainpage1{background: #fe6400;}
+.anchor .anchor_mainpage2{background: #be0000;}
+.anchor .anchor_mainpage3{background: #ccc;}
+.anchor .anchor_mainpage4{background: #0093dd;}
+.anchor .anchor_mainpage5{background: #a8cf33;}
+.anchor .anchor_top { height:200px;}
+.anchor .anchor_ie6{ _position: absolute;
+_bottom: auto;
+_top:expression(eval(document.documentElement.scrollTop));}
+
+.anchor .anchor_nav li a.on{background-position: 0 -70px; color: #fff; text-decoration: none;}
